@@ -1,0 +1,22 @@
+[
+  {
+    "id": "DRONE-001",
+    "status": "active",
+    "battery": 78
+  },
+  {
+    "id": "DRONE-002",
+    "status": "idle",
+    "battery": 92
+  },
+  {
+    "id": "DRONE-003",
+    "status": "charging",
+    "battery": 34
+  },
+  {
+    "id": "DRONE-004",
+    "status": "active",
+    "battery": 56
+  }
+]

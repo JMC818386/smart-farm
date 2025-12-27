@@ -1,0 +1,72 @@
+/**
+ * ATOM: Button Styles
+ */
+
+.button {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.button:hover:not(:disabled) {
+  box-shadow: var(--shadow-glow-copper);
+}
+
+.button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.button--primary {
+  background: var(--sky-cobalt);
+  color: var(--text-primary);
+}
+
+.button--primary:hover:not(:disabled) {
+  background: var(--sky-cobalt-light);
+}
+
+.button--secondary {
+  background: var(--soil-graphite-light);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+}
+
+.button--secondary:hover:not(:disabled) {
+  border-color: var(--accent-copper);
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.button--ghost:hover:not(:disabled) {
+  color: var(--accent-copper);
+}
+
+/* Sizes */
+.button--sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.button--md {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
+}
+
+.button--lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-lg);
+}

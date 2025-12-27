@@ -1,0 +1,40 @@
+/**
+ * ORGANISM: DroneFeedPanel Styles
+ */
+
+.drone-feed-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.drone-feed-panel__title {
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.drone-feed-panel__list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.drone-feed-panel__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.drone-feed-panel__list::-webkit-scrollbar-track {
+  background: var(--soil-graphite-dark);
+}
+
+.drone-feed-panel__list::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: var(--radius-sm);
+}
+
+.drone-feed-panel__empty {
+  text-align: center;
+  padding: var(--space-8);
+  color: var(--text-muted);
+  font-style: italic;
+}

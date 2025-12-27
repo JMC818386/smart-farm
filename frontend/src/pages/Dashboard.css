@@ -1,0 +1,48 @@
+/**
+ * Dashboard Page Styles
+ */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.dashboard__weather {
+  grid-column: span 4;
+}
+
+.dashboard__drones {
+  grid-column: span 4;
+}
+
+.dashboard__soil {
+  grid-column: span 4;
+}
+
+.dashboard-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.dashboard-error {
+  max-width: 600px;
+  margin: var(--space-12) auto;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .dashboard__weather,
+  .dashboard__drones,
+  .dashboard__soil {
+    grid-column: span 12;
+  }
+}

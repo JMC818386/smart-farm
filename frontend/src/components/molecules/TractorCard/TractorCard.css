@@ -1,0 +1,25 @@
+/**
+ * MOLECULE: TractorCard Styles
+ */
+
+.tractor-card {
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.tractor-card:hover {
+  border-color: var(--accent-copper);
+  box-shadow: var(--shadow-glow-copper);
+}
+
+.tractor-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.tractor-card__name {
+  font-size: var(--text-lg);
+  color: var(--text-primary);
+}

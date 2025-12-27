@@ -1,0 +1,25 @@
+/**
+ * MOLECULE: DroneStatus Styles
+ */
+
+.drone-status {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.drone-status:last-child {
+  border-bottom: none;
+}
+
+.drone-status__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.drone-status__id {
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-bold);
+}

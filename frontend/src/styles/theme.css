@@ -1,0 +1,191 @@
+/**
+ * AGRICOMMAND OS — DESIGN TOKENS
+ * Phase I Design System
+ * Strict adherence to BRAND_UI_RULES.md
+ */
+
+:root {
+  /* === COLOR PALETTE === */
+  
+  /* Background */
+  --soil-graphite: #1a1d23;
+  --soil-graphite-light: #23272f;
+  --soil-graphite-dark: #0f1115;
+  
+  /* Active/Data */
+  --sky-cobalt: #2563eb;
+  --sky-cobalt-light: #3b82f6;
+  --sky-cobalt-dark: #1e40af;
+  
+  /* Positive State */
+  --agri-green: #22c55e;
+  --agri-green-light: #4ade80;
+  --agri-green-dark: #16a34a;
+  
+  /* Alerts */
+  --harvest-amber: #f59e0b;
+  --harvest-amber-light: #fbbf24;
+  --harvest-amber-dark: #d97706;
+  
+  /* Accents */
+  --accent-copper: #d97757;
+  --accent-copper-glow: rgba(217, 119, 87, 0.3);
+  
+  /* Semantic Colors */
+  --color-error: #ef4444;
+  --color-warning: var(--harvest-amber);
+  --color-success: var(--agri-green);
+  --color-info: var(--sky-cobalt);
+  
+  /* Neutral Palette */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-default: #334155;
+  --border-subtle: #1e293b;
+  
+  /* === TYPOGRAPHY === */
+  
+  /* Font Families */
+  --font-display: 'Oxanium', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Inter', monospace;
+  
+  /* Font Weights */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  
+  /* === LAYOUT === */
+  
+  /* Grid */
+  --grid-columns: 12;
+  --grid-gutter: 16px;
+  --grid-margin: 32px;
+  
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-default: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  
+  /* === EFFECTS === */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-default: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow-copper: 0 0 20px var(--accent-copper-glow);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+/* === GLOBAL RESETS === */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--soil-graphite);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === TYPOGRAPHY UTILITIES === */
+
+.display {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-medium);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* === ACCESSIBILITY === */
+
+:focus-visible {
+  outline: 2px solid var(--accent-copper);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* === GRID SYSTEM === */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gutter);
+  padding: 0 var(--grid-margin);
+}
+
+/* === PANEL BASE === */
+
+.panel {
+  background: var(--soil-graphite-light);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-default);
+  padding: var(--space-6);
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tractor-001",
+    "name": "HARVESTER-A",
+    "fuel": 85,
+    "task": "Harvesting"
+  },
+  {
+    "id": "tractor-002",
+    "name": "PLANTER-B",
+    "fuel": 42,
+    "task": "Planting"
+  },
+  {
+    "id": "tractor-003",
+    "name": "SPRAYER-C",
+    "fuel": 68,
+    "task": "Spraying"
+  },
+  {
+    "id": "tractor-004",
+    "name": "TILLER-D",
+    "fuel": 15,
+    "task": "Tilling"
+  }
+]
