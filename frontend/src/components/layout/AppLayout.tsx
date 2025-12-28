@@ -42,6 +42,12 @@ export const AppLayout: React.FC = () => {
           >
             Soil
           </Link>
+          <Link 
+            to="/map" 
+            className={`app-layout__nav-link ${isActive('/map') ? 'active' : ''}`}
+          >
+            Map
+          </Link>
         </div>
       </nav>
       

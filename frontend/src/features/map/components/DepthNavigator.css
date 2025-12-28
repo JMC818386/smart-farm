@@ -1,0 +1,53 @@
+/**
+ * DepthNavigator Styles
+ * Per BRAND_UI_RULES.md - Copper accents, functional motion
+ */
+
+.depth-navigator {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.depth-navigator__breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--soil-graphite-300);
+}
+
+.depth-navigator__separator {
+  color: var(--soil-graphite-500);
+  user-select: none;
+}
+
+.depth-navigator__crumb {
+  color: var(--soil-graphite-100);
+}
+
+.depth-navigator__crumb:last-child {
+  color: var(--accent-copper-400);
+  font-weight: var(--font-semibold);
+}
+
+.depth-navigator__back-button {
+  padding: 8px 16px;
+  background: var(--soil-graphite-800);
+  border: 1px solid var(--soil-graphite-600);
+  border-radius: 4px;
+  color: var(--soil-graphite-100);
+  font-size: var(--font-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.depth-navigator__back-button:hover {
+  background: var(--soil-graphite-700);
+  border-color: var(--accent-copper-500);
+  box-shadow: 0 0 0 2px var(--accent-copper-900);
+}
+
+.depth-navigator__back-button:active {
+  transform: scale(0.98);
+}

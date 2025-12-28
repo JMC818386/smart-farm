@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "california",
+      "properties": {
+        "name": "California",
+        "abbreviation": "CA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-124.4, 42.0], [-120.0, 42.0], [-120.0, 32.5], [-124.4, 32.5], [-124.4, 42.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "texas",
+      "properties": {
+        "name": "Texas",
+        "abbreviation": "TX"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-106.6, 36.5], [-93.5, 36.5], [-93.5, 25.8], [-106.6, 25.8], [-106.6, 36.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "iowa",
+      "properties": {
+        "name": "Iowa",
+        "abbreviation": "IA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-96.6, 43.5], [-90.1, 43.5], [-90.1, 40.4], [-96.6, 40.4], [-96.6, 43.5]]]
+      }
+    }
+  ]
+}

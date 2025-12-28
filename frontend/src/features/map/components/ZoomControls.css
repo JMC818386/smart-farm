@@ -1,0 +1,64 @@
+/**
+ * ZoomControls Styles
+ */
+
+.zoom-controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.zoom-controls__breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zoom-controls__btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.zoom-controls__btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-accent-copper, #ff6b35);
+}
+
+.zoom-controls__btn--home {
+  color: var(--color-accent-copper, #ff6b35);
+  font-weight: 600;
+}
+
+.zoom-controls__btn--back {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.zoom-controls__separator {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+
+.zoom-controls__btn svg {
+  width: 16px;
+  height: 16px;
+}

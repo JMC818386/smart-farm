@@ -1,1 +1,23 @@
-/* AgriCommand OS - Index styles removed, using theme.css */
+/**
+ * Base styles - theme.css contains all design tokens
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--soil-graphite-950);
+  color: var(--soil-graphite-100);
+  overflow: hidden;
+}

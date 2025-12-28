@@ -1,0 +1,68 @@
+/**
+ * KPIOverlayPanel Styles
+ * Per BRAND_UI_RULES.md - Agri-green accents for positive metrics
+ */
+
+.kpi-panel {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 280px;
+  background: rgba(23, 23, 23, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--soil-graphite-700);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.kpi-panel--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.kpi-panel__spinner {
+  color: var(--soil-graphite-400);
+  font-size: var(--font-sm);
+}
+
+.kpi-panel__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--soil-graphite-100);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.kpi-panel__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.kpi-card {
+  background: var(--soil-graphite-900);
+  border: 1px solid var(--soil-graphite-700);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.kpi-card__label {
+  font-size: 12px;
+  color: var(--soil-graphite-400);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.kpi-card__value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--agri-green-400);
+  font-variant-numeric: tabular-nums;
+}
+
+.kpi-card__value--text {
+  font-size: 16px;
+  color: var(--sky-cobalt-400);
+}

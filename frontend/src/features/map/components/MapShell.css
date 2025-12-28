@@ -1,0 +1,35 @@
+/**
+ * MapShell Styles
+ * Per BRAND_UI_RULES.md - Soil-graphite palette, functional motion
+ */
+
+.map-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--soil-graphite-950);
+  color: var(--soil-graphite-100);
+}
+
+.map-shell__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--soil-graphite-700);
+}
+
+.map-shell__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--soil-graphite-50);
+  margin: 0;
+}
+
+.map-shell__content {
+  position: relative;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  min-height: 0;
+}

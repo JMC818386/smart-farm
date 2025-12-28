@@ -7,27 +7,54 @@
 :root {
   /* === COLOR PALETTE === */
   
-  /* Background */
+  /* Soil Graphite - Full Spectrum */
+  --soil-graphite-950: #0a0b0d;
+  --soil-graphite-900: #13151a;
+  --soil-graphite-800: #1a1d23;
+  --soil-graphite-700: #23272f;
+  --soil-graphite-650: #2a2f38;
+  --soil-graphite-600: #3a404c;
+  --soil-graphite-500: #4a505c;
+  --soil-graphite-400: #6b7280;
+  --soil-graphite-300: #9ca3af;
+  --soil-graphite-200: #d1d5db;
+  --soil-graphite-100: #e5e7eb;
+  --soil-graphite-50: #f9fafb;
+  
+  /* Legacy names for backward compatibility */
   --soil-graphite: #1a1d23;
   --soil-graphite-light: #23272f;
   --soil-graphite-dark: #0f1115;
   
-  /* Active/Data */
+  /* Active/Data - Sky Cobalt */
+  --sky-cobalt-500: #2563eb;
+  --sky-cobalt-400: #3b82f6;
+  --sky-cobalt-600: #1e40af;
   --sky-cobalt: #2563eb;
   --sky-cobalt-light: #3b82f6;
   --sky-cobalt-dark: #1e40af;
   
-  /* Positive State */
+  /* Positive State - Agri Green */
+  --agri-green-500: #22c55e;
+  --agri-green-400: #4ade80;
+  --agri-green-600: #16a34a;
   --agri-green: #22c55e;
   --agri-green-light: #4ade80;
   --agri-green-dark: #16a34a;
   
-  /* Alerts */
+  /* Alerts - Harvest Amber */
+  --harvest-amber-500: #f59e0b;
+  --harvest-amber-400: #fbbf24;
+  --harvest-amber-600: #d97706;
   --harvest-amber: #f59e0b;
   --harvest-amber-light: #fbbf24;
   --harvest-amber-dark: #d97706;
   
-  /* Accents */
+  /* Accents - Copper */
+  --accent-copper-500: #d97757;
+  --accent-copper-400: #e89578;
+  --accent-copper-600: #c45d3a;
+  --accent-copper-900: rgba(217, 119, 87, 0.15);
   --accent-copper: #d97757;
   --accent-copper-glow: rgba(217, 119, 87, 0.3);
   

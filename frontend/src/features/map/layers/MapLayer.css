@@ -1,0 +1,34 @@
+/**
+ * MapLayer Styles
+ * Per BRAND_UI_RULES.md - Copper glow on hover, functional transitions
+ */
+
+.map-layer {
+  /* Container for layer groups */
+  opacity: 1;
+}
+
+.map-region {
+  fill: var(--soil-graphite-800);
+  stroke: var(--soil-graphite-600);
+  stroke-width: 1;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.map-region:hover {
+  fill: var(--soil-graphite-700);
+  stroke: var(--accent-copper-500);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px var(--accent-copper-900));
+}
+
+.map-region:active {
+  fill: var(--soil-graphite-650);
+}
+
+.map-layer__message {
+  fill: var(--soil-graphite-400);
+  font-size: 18px;
+  font-family: 'Inter', monospace;
+}

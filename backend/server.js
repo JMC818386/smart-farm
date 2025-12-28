@@ -8,6 +8,7 @@ import cors from 'cors';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import mapRoutes from './routes/map/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -49,6 +50,40 @@ app.get('/api/soil', (req, res) => {
   res.json(data);
 });
 
+// Mount map routes
+app.use('/api/map', mapRoutes);
+
+// District data endpoints for Google Maps integration
+app.get('/api/districts/congressional.geojson', (req, res) => {
+  console.log('[API] GET /api/districts/congressional.geojson');
+  // Mock congressional district data
+  // In production, this would come from US Census Bureau TIGER/Line files
+  res.json({
+    type: 'FeatureCollection',
+    features: []
+  });
+});
+
+app.get('/api/districts/zipcodes.geojson', (req, res) => {
+  console.log('[API] GET /api/districts/zipcodes.geojson');
+  // Mock zipcode data
+  // In production, this would come from ZCTA (ZIP Code Tabulation Areas)
+  res.json({
+    type: 'FeatureCollection',
+    features: []
+  });
+});
+
+app.get('/api/districts/school.geojson', (req, res) => {
+  console.log('[API] GET /api/districts/school.geojson');
+  // Mock school district data
+  // In production, this would come from NCES (National Center for Education Statistics)
+  res.json({
+    type: 'FeatureCollection',
+    features: []
+  });
+});
+
 app.listen(PORT, () => {
-  console.log(`🚜 AgriCommand OS Backend running on http://localhost:${PORT}`);
+  console.log(`🗺️  Living Map Backend with Google Maps Integration running on http://localhost:${PORT}`);
 });

@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "los-angeles",
+      "properties": {
+        "name": "Los Angeles County",
+        "state": "California"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-118.9, 34.8], [-117.6, 34.8], [-117.6, 33.0], [-118.9, 33.0], [-118.9, 34.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "san-diego",
+      "properties": {
+        "name": "San Diego County",
+        "state": "California"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-117.6, 33.5], [-116.1, 33.5], [-116.1, 32.5], [-117.6, 32.5], [-117.6, 33.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "fresno",
+      "properties": {
+        "name": "Fresno County",
+        "state": "California"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-120.5, 37.5], [-118.8, 37.5], [-118.8, 35.8], [-120.5, 35.8], [-120.5, 37.5]]]
+      }
+    }
+  ]
+}
